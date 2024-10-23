@@ -2,7 +2,7 @@ import { createOptions } from "./createOptions.js";
 
 const optionsWrapper = document.getElementById("options-wrapper");
 const body = document.body;
-const eye = document.getElementById("eyeSvg");
+const eye = document.getElementById("eye");
 
 window.addEventListener("message", (event) => {
   optionsWrapper.innerHTML = "";
@@ -10,6 +10,7 @@ window.addEventListener("message", (event) => {
   switch (event.data.event) {
     case "visible": {
       body.style.visibility = event.data.state ? "visible" : "hidden";
+      eye.style.display = event.data.state ? 'block' : 'none';
       return eye.classList.remove("eye-hover");
     }
 
