@@ -18,10 +18,6 @@ To improve many design flaws, ox_target has been written from scratch and drops 
 
 https://overextended.dev/ox_target
 
-## 💾 Download
-
-https://github.com/overextended/ox_target/releases/latest/download/ox_target.zip
-
 ## ✨ Features
 
 - Improved entity and world collision than its predecessor.
